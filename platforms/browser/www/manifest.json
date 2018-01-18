@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Argent",
+  "short_name": "Argent",
+  "version": "com.phonegap.helloworld",
+  "description": "Una herramienta simple para un mejor futuro.",
+  "author": "Aleta-tech",
+  "icons": [],
+  "start_url": "index.html"
+}

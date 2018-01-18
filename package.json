@@ -1,8 +1,16 @@
 {
-    "name": "com.phonegap.helloworld",
-    "version": "1.0.0",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "displayName": "helloworld"
+  "name": "com.phonegap.helloworld",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "displayName": "helloworld",
+  "dependencies": {
+    "cordova-plugin-statusbar": "^2.4.1"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-statusbar": {}
+    }
+  }
 }
