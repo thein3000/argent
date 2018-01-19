@@ -18,8 +18,30 @@
     <div data-page="proyeccion" class="page">
         <div class="page-content">
             <div class="content-block">
-                <h1>Hello there</h1>
-                <img src="lib/framework7/img/i-f7-material.png" alt="" />
+              <div onload="revamp()" style="width: 100%;">
+                  <canvas id="lineChart" height="100" width="300"></canvas>
+
+                  <p> Inversión: <br>
+                      <input type="number" value="100" id="inv">
+                      <input type="button" value="+" onclick="plusle()">
+                      <input type="button" value="-" onclick="minum()">
+                      <input type="button" value="Proyectar" onclick="revamp()" id="btnRevamp">
+                  </p>
+
+                  <p>
+                      Eje X
+                      <select id="periodo">
+                          <option id="0" value="rien" >Mensual</option>
+                          <option id="1" value="un" >Trimestral</option>
+                          <option id="2" value="deux" >Semestral</option>
+                          <option id="3" value="trois" >Anual</option>
+                          <option id="4" value="quatre" >Quinquenal</option>
+                          <option id="5" value="cinq" >Decenal</option>
+                      </select>
+                      <input type="button" value="Periodo" onclick="tiempo()" id="btnPeriodo">
+                  </p>
+                  <p><input type="button" value="Invertir"></p>
+              </div>
             </div>
         </div>
     </div>
