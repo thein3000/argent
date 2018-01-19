@@ -22,5 +22,10 @@ myApp.onPageInit('about', function (page) {
 })
 
 myApp.onPageInit('proyeccion', function (page) {
-  
+
+})
+
+
+myApp.onPageInit('educacion', function (page) {
+
 })
