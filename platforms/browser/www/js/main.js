@@ -1,13 +1,108 @@
 var mesAct = new Date().getMonth();
 var anAct = new Date().getFullYear();
 
+// var ctx = document.getElementById("lineChart").getContext('2d');
+// var myChart = new Chart(ctx, {
+//  type: 'line',
+//  data: {
+//    labels: [meses(mesAct), meses(mesAct + 1), meses(mesAct + 2), meses(mesAct + 3), meses(mesAct + 4)],
+//    xAxisID: 'Tiempo',
+//    yAxisID: 'Dinero',
+//    datasets: [{
+//      label: 'Valor Nominal',
+//      data: [0, 0, 0, 0, 0],
+//      backgroundColor: 'rgba(54, 162, 235, .4)',
+//      borderColor: 'rgba(54, 162, 235, 1)',
+//      pointBackgroundColor: 'rgba(51, 51, 255, 1)',
+//      pointBorderColor: 'rgba(51, 51, 255, 1)',
+//      borderWidth: 1,
+//      lineTension: 0.4 //pa' que se vean las curvas
+//    },
+//    {
+//      label: 'Valor Real',
+//      data: [0, 0, 0, 0, 0],
+//      backgroundColor: 'rgba(79, 238, 73, .4)',
+//      borderColor: 'rgba(79, 238, 73, 1)',
+//      pointBackgroundColor: 'rgba(26, 210, 20, 1)',
+//      pointBorderColor: 'rgba(26, 210, 20, 1)',
+//      borderWidth: 1,
+//      lineTension: 0.4
+//    },
+//    {
+//      label: 'Sin Inversión',
+//      data: [0, 0, 0, 0, 0],
+//      backgroundColor: 'rgba(222, 13, 13, .4)',
+//      borderColor: 'rgba(222, 13, 13, 1)',
+//      pointBackgroundColor: 'rgba(179, 55, 55, 1)',
+//      pointBorderColor: 'rgba(179, 55, 55, 1)',
+//      borderWidth: 1,
+//      lineTension: 0.4
+//    }
+//  ]
+// },
+// options: {
+//  title: {
+//    display: true,
+//    text: 'Predicción del valor de tu argent',
+//    fontSize: 18
+//  },
+//  animation: {
+//    duration: 1000, // En milisegundos
+//  },
+//  showLines: true, //si está en false, se ven los puros puntos
+//  scales: {
+//    yAxes: [{
+//      ticks: {
+//        reverse: false, //por si es necesario que el eje Y esté arriba
+//        beginAtZero: true,
+//        callback: function(value, index, values) {
+//          return '$' + value.toFixed(0);
+//        }
+//      },
+//      scaleLabel: {
+//        display: true,
+//        labelString: 'MXN'
+//      }
+//    }],
+//    xAxes: [{
+//      scaleLabel: {
+//        display: true,
+//        labelString: 'Años'
+//      }
+//    }]
+//  },
+//  layout: {
+//    padding: {
+//      left: 5,
+//      right: 0,
+//      top: 5,
+//      bottom: 0
+//    }
+//  }
+// }
+// });
+
+
+
+
+
+
+/* var input = document.getElementById("inv"); //Se actualiza usando enter
+input.addEventListener("keyup", function(e) {
+   e.preventDefault();
+   if (e.keyCode === 13) {
+       document.getElementById("btnRevamp").click();
+   }
+})
+*/
+
+/*
 function truncar(v) {
     if (v % 1 != 0) {
         return truncar(v | 0);
     } else {
         return v;
     }
-
 }
 
 function meses(n) {
@@ -53,11 +148,7 @@ function meses(n) {
     }
 }
 
-/*
-function clickListener() {
-    document.getElementById('periodo').addEventListener('onChange', tiempo());
-}
-*/
+
 
 function tiempo() {
     var x = document.getElementById("periodo").value;
@@ -133,88 +224,6 @@ function diez() {
     myChart.update();
 }
 
-var ctx = document.getElementById("lineChart").getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: [meses(mesAct), meses(mesAct + 1), meses(mesAct + 2), meses(mesAct + 3), meses(mesAct + 4)],
-        xAxisID: 'Tiempo',
-        yAxisID: 'Dinero',
-        datasets: [{
-                label: 'Valor Nominal',
-                data: [0, 0, 0, 0, 0],
-                backgroundColor: 'rgba(54, 162, 235, .4)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                pointBackgroundColor: 'rgba(51, 51, 255, 1)',
-                pointBorderColor: 'rgba(51, 51, 255, 1)',
-                borderWidth: 1,
-                lineTension: 0.4 //pa' que se vean las curvas
-            },
-            {
-                label: 'Valor Real',
-                data: [0, 0, 0, 0, 0],
-                backgroundColor: 'rgba(79, 238, 73, .4)',
-                borderColor: 'rgba(79, 238, 73, 1)',
-                pointBackgroundColor: 'rgba(26, 210, 20, 1)',
-                pointBorderColor: 'rgba(26, 210, 20, 1)',
-                borderWidth: 1,
-                lineTension: 0.4
-            },
-            {
-                label: 'Sin Inversión',
-                data: [0, 0, 0, 0, 0],
-                backgroundColor: 'rgba(222, 13, 13, .4)',
-                borderColor: 'rgba(222, 13, 13, 1)',
-                pointBackgroundColor: 'rgba(179, 55, 55, 1)',
-                pointBorderColor: 'rgba(179, 55, 55, 1)',
-                borderWidth: 1,
-                lineTension: 0.4
-            }
-        ]
-    },
-    options: {
-        title: {
-            display: true,
-            text: 'Predicción del valor de tu argent',
-            fontSize: 18
-        },
-        animation: {
-            duration: 1000, // En milisegundos
-        },
-        showLines: true, //si está en false, se ven los puros puntos
-        scales: {
-            yAxes: [{
-                ticks: {
-                    reverse: false, //por si es necesario que el eje Y esté arriba
-                    beginAtZero: true,
-                    callback: function(value, index, values) {
-                        return '$' + value.toFixed(0);
-                    }
-                },
-                scaleLabel: {
-                    display: true,
-                    labelString: 'MXN'
-                }
-            }],
-            xAxes: [{
-                scaleLabel: {
-                    display: true,
-                    labelString: 'Años'
-                }
-            }]
-        },
-        layout: {
-            padding: {
-                left: 5,
-                right: 0,
-                top: 5,
-                bottom: 0
-            }
-        }
-
-    }
-});
-
 
 function plusle() { //Suma
     var x = document.getElementById("inv");
@@ -237,19 +246,10 @@ function minum() { //Resta
 
 function revamp() { //Actualizar
     var x = document.getElementById("inv");
-    var n = parseInt(x.value);
-    if (x.value <= 100)
-        x.value = 100
+
     actualizar(x);
 }
 
-var input = document.getElementById("inv"); //Se actualiza usando enter
-input.addEventListener("keyup", function(e) {
-    e.preventDefault();
-    if (e.keyCode === 13) {
-        document.getElementById("btnRevamp").click();
-    }
-})
 
 function actualizar(p) {
     var q = parseInt(p.value);
@@ -273,6 +273,6 @@ function actualizar(p) {
         S = S - 10; //Acá va la fórmula de cuando pierdes argent
         myChart.data.datasets[2].data[i] = S.toFixed(2);
     }
-
     myChart.update();
 }
+*/

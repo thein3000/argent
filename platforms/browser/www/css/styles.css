@@ -9,6 +9,9 @@
 
    See https://github.com/apache/cordova-plugin-statusbar
 */
+.content-block {
+  margin: 0px !important;
+}
 
 .statusbar-overlay {
     background: #000000;
