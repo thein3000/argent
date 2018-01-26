@@ -1,0 +1,59 @@
+#main_nav {
+  /*background-color: #fd7c21;*/
+  background-color: #efbd67;
+  box-shadow: 0px -15px 20px 13px black;
+}
+
+#main_nav:after {
+  background-color: #e86b00;
+}
+
+#main_stage {
+  background-image: url("../img/back_graph.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 200px;
+  top: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  /*background-color: rgba(47, 0, 0, 0.5);*/
+  background-color: rgba(56, 47, 47, 1);
+  box-shadow: inset 0px -7px 20px -10px black;
+}
+#main_stage h1{
+  font-size: 2.2em;
+  margin: 15px;
+}
+
+#menu_panel {
+   background-color: #414141;
+}
+
+#main_content_block {
+  padding: 0px;
+}
+
+#card_holder {
+  margin-top: 210px;
+}
+
+#card_proyeccion .card-content{
+  background-image: url("../img/education_nav.png");
+  height: 100px;
+  background-size: cover;
+}
+#card_educacion .card-content{
+  background-image: url("../img/education_nav.png");
+  height: 70px;
+  background-size: cover;
+  background-position-y: 150px;
+}
+#card_cetes .card-content{
+  background-image: url("../img/cetes.png");
+  height: 70px;
+  background-size: contain;
+  background-position-y: 75px;
+}

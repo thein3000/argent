@@ -4,7 +4,7 @@
         <div class="left">
             <a href="#" class="back link">
                 <i class="icon icon-back"></i>
-                <span>Back</span>
+                <span>Regresar</span>
             </a>
         </div>
         <div class="center sliding">Proyecciones</div>
@@ -13,34 +13,25 @@
         </div>
     </div>
 </div>
-
-<div class="pages">
+<div class="pages navbar-through">
     <div data-page="proyeccion" class="page">
         <div class="page-content">
             <div class="content-block">
               <div style="width: 100%;">
-                  <canvas id="lineChart" height="600" width="600"></canvas>
-
-                  <p> Inversión: <br>
-                      <input type="number" value="100" id="inv">
-                      <input type="button" value="+" onclick="plusle()">
-                      <input type="button" value="-" onclick="minum()">
-                      <input type="button" value="Proyectar" onclick="revamp()" id="btnRevamp">
-                  </p>
-
-                  <p>
-                      Eje X
-                      <select id="periodo">
-                          <option id="0" value="rien" >Mensual</option>
-                          <option id="1" value="un" >Trimestral</option>
-                          <option id="2" value="deux" >Semestral</option>
-                          <option id="3" value="trois" >Anual</option>
-                          <option id="4" value="quatre" >Quinquenal</option>
-                          <option id="5" value="cinq" >Decenal</option>
-                      </select>
-                      <input type="button" value="Periodo" onclick="tiempo()" id="btnPeriodo">
-                  </p>
-                  <p><input type="button" value="Invertir"></p>
+                <canvas id="lineChart" height="600" width="600"></canvas>
+                <input name="Inversion" type="number" value="100" id="inv">
+                <input style="width:6% " class="btn green" type="button" value="+" onclick="plusle()">
+                <input style="width:6% " class="btn red" type="button" value="-" onclick="minum()">
+                <input style="width:63%" class="btn grey" type="button" value="Proyectar" onclick="revamp()" id="btnRevamp">
+                <select class="browser-default" onchange="tiempo()" id="periodo">
+                  <option id="0" value="rien" >Mensual</option>
+                  <option id="1" value="un" >Trimestral</option>
+                  <option id="2" value="deux" >Semestral</option>
+                  <option id="3" value="trois" >Anual</option>
+                  <option id="4" value="quatre" >Quinquenal</option>
+                  <option id="5" value="cinq" >Decenal</option>
+                </select>
+                <input class="btn amber" style="width:100%" type="button" value="Invertir">
               </div>
             </div>
         </div>
