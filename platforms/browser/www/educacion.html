@@ -1,6 +1,3 @@
-<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
-
-<!-- Top Navbar-->
 <div class="navbar">
     <div class="navbar-inner">
         <div class="left">
@@ -15,12 +12,75 @@
         </div>
     </div>
 </div>
-<div class="pages navbar-through">
+<div class="pages">
     <div data-page="educacion" class="page">
         <div class="page-content">
             <div class="content-block">
-
-
+              <div class="tab">
+                <button class="tabs" onclick="loadTab('TabAhorro', 'primeraTab')" id="primeraTab">Ahorro</button>
+                <button class="tabs" onclick="loadTab('TabInversion', 'segundaTab')" id="segundaTab">Inversion</button>
+                <button class="tabs" onclick="loadTab('TabRetiro', 'terceraTab')" id="terceraTab">Retiro</button>
+                <button class="tabs" onclick="loadTab('TabAfores', 'cuartaTab')" id="cuartaTab">Afores</button>
+              </div>
+              <div id="TabAhorro" class="fullpage">
+                <h1 class="eduCenter">Ahorro</h1>
+                <p>El ahorro consiste en retener una parte de tus ingresos para hacer uso de ellos en el futuro. Lo ideal es que sea un porcentaje fijo del ingreso mensual.</p>
+                <p>Ahorrar es muy sencillo. No es necesario tener ingresos muy altos para lograrlo. Lo importante es organizarse. Algunos tips para lograrlo son los siguientes:</p>
+                <ul>
+                  <li>Pensar antes de comprar. ¿De verdad necesitas comprar ese café de $50?</li>
+                  <li>Ahorrar un porcentaje fijo de tus ingresos. Puedes empezar con poco. Puedes empezar con un 5%. Lo importante es adquirir disciplina.</li>
+                  <li>Fíjate una meta. Es mucho más fácil ahorrar cuando sabes para qué lo vas a utilizar. ¿Tienes planeado irte de vacaciones el próximo verano? ¿Estás pensando en tu futuro y quieres tener un nivel de vida digno al retirarte? ¡Ten eso en mente y ahorra para lograrlo!</li>
+                  <li>Resiste. Evita compras compulsivas. ¿En realidad necesitas el nuevo iPhone? Posiblemente tu smartphone actual aún funciona bien.</li>
+                </ul>
+                <p>Ahora que ya adquiriste la disciplina y el hábito del ahorro, seguramente querrás hacer crecer tu dinero. Guardar tus ahorros en una alcancía es un buen inicio de tu cultura financiera, pero ¿te imaginas poder poner a trabajar ese dinero que ahorita no necesitas para que crezca cada vez más? El siguiente paso es invertir esos ahorros para que generen rendimientos.
+                </p>
+              </div>
+              <div id="TabInversion" class="fullpage">
+                <h1 class="eduCenter">Inversión</h1>
+                <p>Ahora que ya adquiriste la disciplina y el hábito del ahorro, seguramente querrás hacer crecer tu dinero. Guardar tus ahorros en una alcancía es un buen inicio de tu cultura financiera, pero ¿te imaginas poder poner a trabajar ese dinero que ahorita no necesitas para que crezca cada vez más?
+                </p>
+                <p>El siguiente paso en tu búsqueda por adquirir una sólida educación financiera que te permita tomar mejores decisiones para tu futuro, es invertir esos ahorros para que generen rendimientos.</p>
+                <p>Tal vez te preguntarás por qué es importante hacer crecer tu dinero. La razón principal es porque, con el paso del tiempo, tu dinero pierde valor. ¿Acaso puedes comprar lo mismo hoy con $100 que hace 10 años? Poniendo un ejemplo, hace 10 años con $10 podíamos comprar unas frituras y un jugo. Hoy, con esa misma cantidad de dinero solo podemos comprar una de las dos cosas. Si hubieras conservado esos $10 pesos hace 10 años, el simple hecho de tenerlos guardados les iba a quitar valor. Esto se debe a la inflación.</p>
+                <p>La inflación es el aumento generalizado de los precios. Entre mayor sea la inflación, mayor es el aumento de los precios, por lo que podemos comprar menos cosas con nuestro dinero. Pensemos en la inflación del 2017. Este año, la inflación tuvo su mayor nivel en los últimos 17 años, al ubicarse en 6.77% anual. Esto significa que, en promedio, los precios aumentaron un 6.77%. Por lo tanto, nuestro dinero perdió un 6.77% de su valor. A inicios de 2017, podíamos comprar cierta cantidad de cosas con, por ejemplo, $1000. Al final del año, para comprar la misma cantidad de cosas, hubiéramos necesitado $1067.7.</p>
+                <p>Afortunadamente, para combatir este problema, podemos invertir nuestro dinero. Existen distintos tipos de inversión. Tenemos inversiones con mucho o poco riesgo, de renta fija o variable, con mucha o poca liquidez, entre otros tipos. Vamos a abordar los que más nos interesan ahora que estamos iniciando en el mundo de las inversiones.</p>
+                <p>Cuando invertimos en algún producto financiero, existen distintos niveles de riesgo. Si una empresa promete pagarnos un rendimiento de 20% cada año a cambio de invertir en ella, podríamos pensar que es una buena inversión, ya que el rendimiento es muy alto. Sin embargo, existe la posibilidad de que la empresa esté pasando por severos problemas financieros y que dentro de un año no tenga el dinero necesario para pagarle a sus inversores lo que les prometió. Incluso podría no pagar la inversión inicial si se fue a la bancarrota. Esto representa un ejemplo de una inversión con muy alto riesgo.</p>
+                <p>Existen inversiones mucho más seguras. Se considera que la inversión con el menor riego posible es la deuda de gobierno. En México podemos comprar distintos instrumentos financieros emitidos por el gobierno. En este tipo de inversiones, los rendimientos suelen estar ligeramente por encima de la inflación. Esto nos permite conservar el valor de nuestro dinero mientras lo guardamos. </p>
+                <p>Por ejemplo, a fecha del 25 de enero del 2018, la tasa anual de un cete (un bono gubernamental en el que podemos invertir fácilmente) es del 7.78%. Si hoy invirtiéramos $1000 en este instrumento, el 25 de enero de 2019 tendríamos $1077.8. Como dijimos antes, al finalizar el 2017, la inflación anual se situó en 6.67%. Previamente calculamos que, debido a esta inflación, lo que al iniciar el año costaba $1000, al finalizar costaba, en promedio, $1066.7. Suponiendo que durante 2018 tengamos la misma inflación, podemos ver que el dinero que tendremos al finalizar la inversión ($1077.8) será mayor a lo que necesitábamos para mantener el valor de nuestros ahorros ($1066.7). Estos bonos del gobierno son considerados libres de riesgo, pues la posibilidad de que no se pague al inversor es cercana a 0.</p>
+                <p>Al ser el instrumento con menor riesgo posible, la deuda de gobierno suele ser la inversión con el menor rendimiento. Existen muchos instrumentos que puedes explorar con distintos niveles de riesgo y tasas de rendimiento. Como regla general, entre mayor sea el riesgo, mayor será el rendimiento. Si deseas invertir tu dinero de manera segura, invertir en instrumentos como los cetes es tu mejor opción.</p>
+                <p>Ahora que comprendemos la importancia de no solo ahorrar nuestro dinero, sino también invertirlo para conservar y aumentar su valor, pasaremos a estudiar una de las mayores razones para invertir: nuestro fondo de retiro. ¿Has pensado alguna vez sobre cómo sobrevivirás cuando te retires? </p>
+              </div>
+              <div id="TabRetiro" class="fullpage">
+                <h1 class="eduCenter">Retiro</h1>
+                <p>Nunca es tarde para empezar a invertir en tu futuro. Pero entre más rápido comiences a hacerlo, mayores serán los beneficios que tendrás cuando te retires.</p>
+                <p>Con *inserte nombre de la aplicación*, vamos a aprender a invertir nuestro dinero a largo plazo, con el objetivo principal de asegurarnos un retiro digno. Existen mejores opciones para este fin, como las Afores (hablaremos de ellas más adelante), pero en este momento que vas empezando a comprender los beneficios de poner a trabajar tu dinero, es una buena opción iniciar con los instrumentos más seguros.</p>
+                <p>Previamente vimos qué pasaría con $1000 de tu dinero si los inviertes en cetes durante un año. Tal vez pienses que el resultado no es nada espectacular: solo ganaste $77 pesos. Pero recuerda: vamos a aprender por qué es importante invertir a largo plazo. Para ello veamos cuánto dinero ganaríamos si invertimos los mismos $1000 durante 5 años (suponiendo que la tasa de rendimiento de los cetes siga siendo 7.78%:</p>
+                <img class="eduImage" src="img/retiro1.png">
+                <p>Después de 5 años, tendrás tus $1000 iniciales más $454.45 de rendimientos. Esto ya es una cantidad considerable. Pero ahora veamos qué pasa en el verdadero largo plazo.</p>
+                <p>Supongamos que hoy inviertes $1000 pesos durante 40 años con la misma tasa del 7.78% anual. En la siguiente gráfica vemos cómo aumenta tu dinero:</p>
+                <img class="eduImage" src="img/retiro2.png">
+                <p>Suponiendo que nos faltan 40 años para retirarnos, si hoy invertimos $1000 pesos, dentro de 40 años podremos retirar $20022. Esto muestra la importancia de invertir pensando en el largo plazo.</p>
+                <p>No obstante, hay que recordar un factor muy importante: la inflación. Si bien es cierto que dentro de 40 años tendríamos $20022, en realidad esa cantidad no valdrá lo mismo que vale hoy. Actualmente nos podría servir para muchas cosas, pero en un futuro, debido a la inflación, nos alcanzará para menos. Entonces, ¿por qué invertir si al final no va a valer más?</p>
+                <p>Ahora veamos qué pasaría si no inviertes tus $1000. Durante el último año, la inflación ha sido del 6.85%. Este indicador está en niveles que no se habían visto desde hace 17 años, pero vamos a tomar este valor como ejemplo. Si durante los próximos 5 años se mantiene la misma inflación, el valor real de nuestro dinero sería el siguiente:</p>
+                <img class="eduImage" src="img/retiro3.png">
+                <p>Esta gráfica nos muestra que dentro de 5 años (en 2023), el valor real de nuestros $1000 pesos será de $717.97. Esto quiere decir que si no invertimos nuestros $1000, dentro de 5 años solo nos alcanzará para comprar lo que hoy podríamos comprar con $717.97. Compraremos menos cosas con la misma cantidad de dinero.</p>
+                <p>Ahora veamos a mayor plazo. Veamos cuánto valdrá nuestro dinero dentro de 40 años si no lo invertimos:</p>
+                <img class="eduImage" src="img/retiro4.png">
+                <p>En esta gráfica vemos que si dejamos nuestros $1000 sin invertir, dentro de 40 años ese dinero valdrá solo ¡$70 pesos! Si la inflación se mantiene al ritmo actual, en el futuro con los $1000 pesos que no invertimos solo podremos comprar lo necesario para comer por un día.</p>
+                <p>Por ello resulta importante poner a trabajar el dinero que ahorramos. A pesar de que al invertir en cetes no obtenemos grandes rendimientos, sí resultan suficientes para ganarle a la inflación. Si vemos a largo plazo, esto nos permitirá mantener el valor de nuestro dinero y obtener un pequeño excedente.</p>
+                <p>Si no adquirimos esta cultura de invertir para nuestro retiro, difícilmente podremos mantener el nivel de vida que tenemos actualmente.</p>
+              </div>
+              <div id="TabAfores" class="fullpage">
+                <h1 class="eduCenter">Afores</h1>
+                <p>Anteriormente, cuando llegábamos a cierta edad, dejábamos de retirar y nos jubilábamos. Si habíamos cotizado en el IMSS durante 500 semanas, tendríamos una pensión vitalicia correspondiente a entre el 80 y el 100% de nuestro último salario. Prácticamente seguíamos recibiendo los mismos ingresos que cuando trabajábamos. De esta manera podíamos estar seguros de que tendríamos un retiro digno.</p>
+                <p>Sin embargo, la Ley del IMSS de 1997 cambió el sistema de pensiones. Ahora el trabajador ha adquirido mayor responsabilidad. Actualmente, cuando nos retiramos, nuestra pensión se compone de la cantidad que hayamos ahorrado en nuestra Administradora de Fondos para el Retiro (Afore). </p>
+                <p>A lo largo de nuestra vida laboral, iremos aportando a nuestra Afore por medio de las retenciones que se hacen a nuestro salario y de las aportaciones del patrón y del gobierno. Estos recursos que van a tu Afore se invierten en Siefores, que son fondos de inversión de las Afores encargados de invertir tu dinero para hacerlo crecer. ¿Recuerdas la importancia de invertir y no solo ahorrar? Gracias a las Afores no tienes que preocuparte por buscar en dónde y en qué invertir: ellos lo hacen por ti. </p>
+                <p>No obstante, hay que considerar que las Afores invierten en distintos instrumentos con diferentes niveles de riesgo y diversas tasas de rendimiento. Debido a este mayor riesgo, los rendimientos de las Afores suelen ser mayores a los de los bonos de gobierno, como los Cetes. Es cierto que en ocasiones habrá pérdidas. Si hay riesgo, existe la posibilidad de perder. Pero recuerda: las personas que manejan tu dinero en las Siefores son profesionales. La mayor parte de tu dinero se invierte en bonos de gobierno, por lo que está libre de riesgo. Solo una parte se invierte en instrumentos con mayor riesgo.</p>
+                <p>Afortunadamente, mecanismos como las Afores facilitan el ahorro (e inversión) para nuestro retiro. Si eres asalariado, cada mes, por ley, irá a tu afore un 6.5% de tu sueldo. Pero de ese 6.5%, solo 1.125% lo aporta el trabajador. El resto lo aportan el patrón (5.15%) y el gobierno (0.225%). No toda la responsabilidad cae sobre el trabajador. </p>
+                <p>Sin embargo, se estima que invertir en tu Afore solo el 6.5% de tu salario no garantiza tener un retiro con el mismo nivel de vida que el actual. Por ello, resulta fundamental otra subcuenta de tu Afore: las aportaciones voluntarias. Estas permiten acceder a mayores rendimientos, beneficios fiscales, y, en caso de ser necesario, retirar los recursos (solo de esta subcuenta) cuando se necesiten, aunque no es lo ideal si consideramos que están pensados para invertirse en el largo plazo. </p>
+                <p>La Consar (Comisión Nacional del Sistema de Ahorro para el Retiro) afirma que si cada trabajador ahorra al menos 1% de su sueldo mensual y lo invierte en su Afore por medio de una aportación voluntaria, su pensión podría aumentar en un 30 o 40% respecto a lo que recibiría si no hace ninguna aportación extra.</p>
+                <p>En la página web de la Consar podrás aprender más sobre las Afores, para que tomes una decisión informada a la hora de elegir una para empezar a asegurar tu futuro.</p>
+                <p>Por lo pronto, si aún no te animas a aportar voluntariamente a tu afore, puedes empezar con inversiones seguras por medio de esta aplicación. Puedes simular cómo aumentará el valor de tu dinero, o cómo se podría ver afectado por la inflación en caso de no invertirlo. ¡Bienvenido a la construcción de tu futuro!</p>
+              </div>
             </div>
         </div>
     </div>

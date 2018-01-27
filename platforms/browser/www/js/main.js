@@ -1,6 +1,25 @@
 var mesAct = new Date().getMonth();
 var anAct = new Date().getFullYear();
 
+//function de placido
+function loadTab(tabname, element){
+  var i;
+  var content;
+  var links;
+  content = document.getElementsByClassName("fullpage");
+  for (i = 0; i < content.length; i++) {
+    content[i].style.display = "none";
+  }
+  links = document.getElementsByClassName("tabs");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.backgroundColor = "rgb(254, 246, 91)";
+    links[i].style.fontWeight = "normal";
+  }
+  document.getElementById(tabname).style.display = "block";
+  document.getElementById(element).style.backgroundColor = "rgb(255, 204, 0)";
+  document.getElementById(element).style.fontWeight = "bold";
+}
+
 // var ctx = document.getElementById("lineChart").getContext('2d');
 // var myChart = new Chart(ctx, {
 //  type: 'line',

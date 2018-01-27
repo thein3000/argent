@@ -1,0 +1,58 @@
+.tabs{
+  outline:none;
+  border: solid 1px rgb(254, 246, 91);
+  float: left;
+  width: 25%;
+  display:block;
+  background-color: rgb(254, 246, 91);
+  font-size: 12px;
+  height: 30px;
+  z-index: 12;
+}
+
+.eduCenter{
+  text-align: center;
+  font-weight: bold;
+}
+
+.eduImage{
+  width: 90%;
+  left: 5%;
+}
+
+.fullpage{
+  display: none;
+  background-color: white;
+  padding: 20px;
+  text-align: justify;
+  color: black;
+}
+
+.tab{
+  height:150%;
+  display: block;
+  box-shadow: 4px 4px #888888;
+  z-index: 11;
+}
+
+#TabAhorro{
+  display:block;
+  background-color: #fff599;
+}
+
+#TabInversion{
+  background-color: #ffecb3;
+}
+
+#TabRetiro{
+  background-color: #ffe8b3;
+}
+
+#TabAfores{
+  background-color: #ffe4b3;
+}
+
+#primeraTab{
+  background-color: rgb(255, 204, 0);
+  font-weight: bold;
+}
