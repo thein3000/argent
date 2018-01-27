@@ -22,13 +22,14 @@
 <body>
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
     <div class="statusbar-overlay"></div>
-
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
     <div id="menu_panel" class="panel panel-left panel-reveal">
         <ul class="sidepanel_list">
           <a href="proyeccion.html"><li>Proyecciones</li></a>
+          <a href="inversiones.html"><li>Inversiones</li></a>
+          <a href="registro.html"><li>Registro de inversiones</li></a>
           <a href="educacion.html"><li>Educacion</li></a>
           <a href="cetes.html"><li>Cetes</li></a>
         </ul>
@@ -61,6 +62,12 @@
                               <a href="proyeccion.html"><div id="card_proyecciones" class="card">
                                 <div class="card-header">Proyecciones de inversion <img src="img/chevron-right.png"/></div>
                               </div></a>
+                              <a href="inversiones.html"><div id="card_proyecciones" class="card">
+                                <div class="card-header">Ve tus inversiones <img src="img/chevron-right.png"/></div>
+                              </div></a>
+                              <a href="registro.html"><div id="card_proyecciones" class="card">
+                                <div class="card-header">Registra inversiones <img src="img/chevron-right.png"/></div>
+                              </div></a>
                               <a href="educacion.html"><div id="card_educacion" class="card">
                                 <div class="card-header">Aprende sobre los beneficios de invertir</div>
                                 <div class="card-content"></div>
@@ -74,11 +81,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Bottom Toolbar-->
-            <!-- <div class="toolbar">
-                <div class="toolbar-inner">
-                </div>
-            </div> -->
         </div>
     </div>
 
@@ -87,6 +89,16 @@
     <script type="text/javascript" src="js/my-app.js"></script>
     <script src="js/vendor/Chart.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/include.js"></script>
+    <!-- <script src="http://192.168.1.81:9080/target/target-script-min.js#anonymous"></script> -->
+    <script>
+    var db;
+    document.addEventListener('deviceready', function(){
+      db = window.openDatabase("LocalStor", "1.0", "Cordova Demo", 200000);
+      db.transaction(createTwoTables);
+      getLulz();
+      readFile();
+    }, false);
     </script>
 
 

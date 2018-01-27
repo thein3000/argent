@@ -1,0 +1,48 @@
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="back link">
+        <i class="icon icon-back"></i>
+        <span>Regresar</span>
+      </a>
+    </div>
+    <div class="center sliding">Inversiones realizadas</div>
+    <div class="right">
+      <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="pages">
+  <div data-page="inversiones" class="page">
+    <div class="page-content">
+      <div class="content-block">
+        <div style="width: 100%;">
+          <canvas id="IlineChart" height="600" width="600"></canvas>
+          <p> Inversiones <br>
+            <table id="contInvs">
+              <tr>
+                <th>Id Inversión</th>
+                <th>Monto</th>
+                <th>Fecha</th>
+                <th></th>
+              </tr>
+            </table>
+          </p>
+          <p>
+            Eje X
+            <select id="Iperiodo" onchange="Itiempo()">
+              <option id="0" value="rien" >Mensual</option>
+              <option id="1" value="un" >Trimestral</option>
+              <option id="2" value="deux" >Semestral</option>
+              <option id="3" value="trois" >Anual</option>
+              <option id="4" value="quatre" >Quinquenal</option>
+              <option id="5" value="cinq" >Decenal</option>
+            </select>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
