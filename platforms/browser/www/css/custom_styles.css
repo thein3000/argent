@@ -13,7 +13,7 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  height: 200px;
+  height: 180px;
   top: 44px;
   width: 100%;
   display: flex;
@@ -27,6 +27,31 @@
   font-size: 2.2em;
   margin: 15px;
 }
+
+#menu_stage {
+  background-image: url("../img/pink-thing.png");
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  height: 200px;
+  top: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  /*background-color: rgba(47, 0, 0, 0.5);*/
+  background-color: rgba(56, 47, 47, 1);
+  box-shadow: inset 0px -7px 20px -10px black;
+}
+#menu_stage h1{
+  font-size: 2.2em;
+  margin: 15px;
+}
+
+.beneath_menu_stage {
+  margin-top: 250px;
+}
+
 
 #register_stage {
   background-image: url("../img/bag.png");
@@ -60,6 +85,10 @@
   padding: 0px;
 }
 
+#main_card_holder {
+  margin-top: 180px;
+}
+
 #card_holder {
   margin-top: 210px;
 }
@@ -74,6 +103,12 @@
   height: 70px;
   background-size: cover;
   background-position-y: 150px;
+}
+#card_menu_inversion .card-content{
+  background-image: url("../img/graph-grey.png");
+  height: 80px;
+  background-size: cover;
+  background-position-y: 210px;
 }
 #card_cetes .card-content{
   background-image: url("../img/cetes.png");
