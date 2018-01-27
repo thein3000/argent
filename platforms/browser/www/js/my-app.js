@@ -210,7 +210,7 @@ myApp.onPageInit('about', function (page) {
 })
 
 myApp.onPageInit('proyeccion', function (page) {
-  
+
   ctx = document.getElementById("lineChart").getContext('2d');
   console.log(ctx);
 
@@ -299,5 +299,9 @@ myApp.onPageInit('proyeccion', function (page) {
 })
 
 myApp.onPageInit('educacion', function (page) {
+
+})
+
+myApp.onPageInit('cetes', function (page) {
 
 })
