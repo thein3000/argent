@@ -264,13 +264,25 @@ function Irevamp() { //Iactualizar
     //var x = document.getElementById("inv");
     //var n = parseInt(x.value);
 
-    Iactualizar(cur_inv);
+    if(!cur_inv)
+      histoInv();
+    else
+      Iactualizar(cur_inv, false);
 }
 
 
-function Iactualizar(p) {
-    cur_inv = p;
-    var q = parseFloat(p.monto);
+function Iactualizar(p, n) {
+    var q;
+    if(n){
+
+      q = p;
+      cur_inv = false;
+    }else{
+
+      q = parseFloat(p.monto);
+      cur_inv = p;
+
+    }
 
     for (d = 0; d < 3; d++) {
         Imychart.data.datasets[d].data[0] = q.toFixed(2);
@@ -291,7 +303,17 @@ function Iactualizar(p) {
       5.584481
       //5.924896, 5.869048, 5.821673,5.811925
     ];
-    var anUDIS= inflacion(p.fecha);
+    var anUDIS;
+    if(n){
+
+      anUDIS = inflacion(converDate(new Date()));
+
+    }else{
+
+      anUDIS = inflacion(p.fecha);
+      //console.log(anUDIS);
+
+    }
     //var x = getUDIS(diAct,mesAct,anAct) / getInflacion(diAct,mesAct,anAct - j);
 //=====================================================================
 
@@ -369,6 +391,20 @@ function Iactualizar(p) {
     Imychart.update();
 }
 
+function histoInv(){
+
+
+    var totInv = 0;
+    for(var i = 0; i<invsi.length; i++){
+
+      totInv += parseFloat(invsi[i]["monto"]);
+
+    }
+
+    Iactualizar(totInv, true);
+
+
+}
 
 //=====================================================
 

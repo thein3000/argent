@@ -66,7 +66,10 @@ function lessMonth(f1, nMeses){
 
 function converDate(date){
 
-  return date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear();
+  if(date.getMonth()+1 >=10)
+    return date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear();
+  else
+    return date.getDate() + "/" + "0" + (date.getMonth()+1) + "/" + date.getFullYear();
 
 }
 function neuDate(f1){
@@ -185,6 +188,7 @@ function getInv(usuario){
 
 function outputInvs(inv){
   var cont = document.getElementById("contInvs");
+  var totInv = 0;
   for(var i = 0; i<inv.length; i++){
 
     var row = document.createElement("tr");
@@ -192,17 +196,33 @@ function outputInvs(inv){
     rId.innerHTML = inv[i]["id"];
     var rMonto = document.createElement("td");
     rMonto.innerHTML = inv[i]["monto"];
+    totInv += parseFloat(inv[i]["monto"]);
     var rFecha = document.createElement("td");
     rFecha.innerHTML = inv[i]["fecha"];
     var button = document.createElement("button");
     button.innerHTML = "Proyectar";
-    button.onclick = Iactualizar.bind(this, inv[i]);
+    button.onclick = Iactualizar.bind(this, inv[i], false);
     row.appendChild(rId);
     row.appendChild(rMonto);
     row.appendChild(rFecha);
     row.appendChild(button);
     cont.appendChild(row);
   }
+
+  var row = document.createElement("tr");
+  var rId = document.createElement("td");
+  rId.innerHTML = "Monto total";
+  var rMonto = document.createElement("td");
+  rMonto.innerHTML = totInv;
+  var rFecha = document.createElement("td");
+  var button = document.createElement("button");
+  button.innerHTML = "Proyectar total";
+  button.onclick = histoInv;
+  row.appendChild(rId);
+  row.appendChild(rMonto);
+  row.appendChild(rFecha);
+  row.appendChild(button);
+  cont.appendChild(row);
 
 }
 
