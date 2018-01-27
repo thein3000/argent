@@ -9,7 +9,7 @@
         <span>Regresar</span>
       </a>
     </div>
-    <div class="center sliding">Educacion</div>
+    <div class="center sliding">Registro de inversiones</div>
     <div class="right">
       <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
     </div>
@@ -18,7 +18,10 @@
 <div class="pages navbar-through">
   <div data-page="registro" class="page">
     <div class="page-content">
-      <div class="content-block">
+      <div id="register_stage" class="">
+        <h1>Registro de inversiones</h1>
+      </div>
+      <div class="beneath_stage container">
         <select id="Itipo">
           <option id="I0" value="mensual" >Mensual</option>
           <option id="I1" value="trimestral" >Trimestral</option>
@@ -27,8 +30,8 @@
         </select><br>
         <br>
         Monto<br>
-        <input type="text" id="Imonto"><br>
-        <input type="button" value="invertir" onclick="invest()">
+        <input type="number" id="Imonto"><br>
+        <input type="button" class="btn green" value="invertir" onclick="invest()">
       </div>
     </div>
   </div>

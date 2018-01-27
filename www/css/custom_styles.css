@@ -28,6 +28,30 @@
   margin: 15px;
 }
 
+#register_stage {
+  background-image: url("../img/bag.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 350px;
+  top: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  /*background-color: rgba(47, 0, 0, 0.5);*/
+  background-color: rgba(56, 47, 47, 1);
+  box-shadow: inset 0px -7px 20px -10px black;
+}
+#register_stage h1{
+  font-size: 2.2em;
+  margin: 15px;
+}
+
+.beneath_stage {
+  margin-top: 330px;
+}
+
 #menu_panel {
    background-color: #414141;
 }
